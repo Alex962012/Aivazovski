@@ -1,0 +1,68 @@
+.mobile-navigation {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 30px;
+}
+
+.burger-icon {
+    width: 33px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.mobile-navigation-toggler {
+    display: none;
+}
+
+.mob-nav {
+    /* visibility: hidden; */
+    position: fixed;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    padding: 55px 20px 0;
+    inset: 0;
+    translate: 100% 0;
+    transition: all .33s;
+    background-color: var(--bg-main);
+}
+
+.mobile-navigation-toggler:checked+.mob-nav {
+    /* visibility: visible; */
+    translate: 0;
+}
+
+
+.mob-nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+.mob-nav-link {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--font-color-gray);
+}
+
+.cross-icon {
+    width: 25px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.mob-nav-close {
+    position: absolute;
+    top: 55px;
+    right: 30px;
+}
+
+@media (max-width:480px) {
+    .mobile-navigation {
+        display: block;
+    }
+
+}
